@@ -1,2 +1,2 @@
 # hello-world
-My first website from scratch 
+My first website from scratch

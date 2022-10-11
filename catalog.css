@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    background-color: #03071e;
+    color: white;
+}
+
+h2,
+h3 {
+    color: red;
+    text-decoration: underline;
+}
+
+header {
+    background-color: #03071e;
+    border: 3px solid #03071e;
+    width: 100%;
+    height: auto;
+
+}
+
+header h1 {
+    color: red;
+    text-align: center;
+    font-size: 90px;
+    margin: 20px 0 20px 0;
+}
+
+nav {
+    text-align: center;
+    width: 100%;
+    margin: auto
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    margin: 0 15px 0 15px;
+}
+
+nav a:hover {
+    background-color: red;
+    text-decoration: underline;
+    border: 5px solid red;
+    border-radius: 50px;
+    padding: 2px 4px 2px 4px;
+}
+
+form {
+    display: inline-block;
+    font-size: 20px;
+    margin: 0 15px 0 15px;
+}
+
+form button {
+    background-color: red;
+    color: white;
+    border: 5px solid red;
+    border-radius: 10%;
+}
+
+section {
+    display: inline-block;
+    margin: 40px;
+}
+
+img {
+    height: 800px;
+    width: 500px;
+}
+
+section h2 {
+    text-align: center;
+    font-size: 60px;
+}
+
+section h3 {
+    text-align: center;
+    font-size: 30px;
+}
+
+section button {
+    margin-left: 35%;
+    background: red;
+    color: white;
+    border: 2px solid red;
+    border-radius: 5%;
+    padding: 1em 2em;
+    font-size: 0.8em;
+}
+
+section button:hover {
+    border-color: red;
+    background-color: white;
+    color: red;
+    box-shadow: 0 0.5em 0.5em -0.4em red;
+}
+
+footer {
+    background-color: #212529;
+    height: 100px;
+}
+
+footer p {
+    font-size: 50px;
+    text-align: center;
+    margin: auto;
+}

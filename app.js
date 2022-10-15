@@ -1,24 +1,31 @@
-let usersName = prompt("What is your name?");
-console.log(usersName);
-document.write("Hello " + usersName + " welcome to my page!");
-let movieQuestion = prompt("Do you like movies?");
-console.log(movieQuestion);
-if (movieQuestion == "Yes") {
-    alert("That's awesome! " + " Well, " + usersName + " since you like movies, you should check out our Moive Catalog!")
+'use strict';
+let usersName;
+function greetUser() {
+    usersName = prompt("What is your name?");
+    if (usersName == "") {
+        usersName = prompt("Please enter your name.");
+    } 
+    console.log(usersName);
+    document.write("Hello " + usersName + " welcome to my page!");
+    return usersName;
 }
-else if(movieQuestion == "yes"){
-    alert("That's awesome! " + " Well, " + usersName + " since you like movies, you should check out our Moive Catalog!")
+greetUser();
+
+function triviaMessage() {
+    let movieQuestion = prompt("Do you like movies?").toLowerCase();
+    console.log(movieQuestion);
+    if (movieQuestion == "yes" || movieQuestion == "maybe") {
+        alert("That's awesome! Well, " + usersName + " lets see if you can answer this movie trivia question!");
+    }
+    else {
+        alert("Sorry to hear that.");
+    }
+    let trivia = prompt("What did Zach Galifianakis call the baby in the movie The Hangover?").toLocaleLowerCase();
+    if (trivia == "carlos") {
+        alert("That's correct! Great job!");
+    }
+    else {
+        alert("Sorry not quite. Would you like to try again?")
+    }
 }
-else if(movieQuestion == "YES"){
-    alert("That's awesome! " + " Well, " + usersName + " since you like movies, you should check out our Moive Catalog!")
-}
-else if(movieQuestion == "Maybe"){
-    alert("That's awesome! " + " Well, " + usersName + " you should check out our Moive Catalog, maybe you'll find something you may like!")
-}
-else if(movieQuestion == "maybe"){
-    alert("That's awesome! " + " Well, " + usersName + " you should check out our Moive Catalog, maybe you'll find something you may like!")
-}
-else if(movieQuestion == "MAYBE"){
-    alert("That's awesome! " + " Well, " + usersName + " you should check out our Moive Catalog, maybe you'll find something you may like!")
-}
-else { alert("Sorry to hear that.") }
+triviaMessage();
